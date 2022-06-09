@@ -4,10 +4,43 @@
     padding: 0;
 }
 :root{
-    --primary-color: rgba(194, 184, 184, 0.97);
+    --primary-color: rgba(234, 123, 123, 0.97);
 }
 
-body {
-    background-color: var(--primary-color)
-    color: crimson;
+.main-container {
+    background-color: rgb(26, 23, 23);
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+.mylogo {
+    margin-left: 60px;
+    font-size: 3rem;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+   }
+
+.navbar li {
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+.navbar li a {
+    padding-right: 35px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid green;
 }
