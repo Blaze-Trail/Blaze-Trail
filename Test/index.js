@@ -1157,8 +1157,11 @@ let newRoomItem = roomItems();
 console.log((newRoomItem.next()).value)
 console.log(newRoomItem.next())
 console.log(newRoomItem.next())
+console.log(newRoomItem.next())
 
 //using a generator with loop
+
+
 
 function* myVillage() {
     let i = 0;
