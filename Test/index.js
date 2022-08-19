@@ -1147,7 +1147,7 @@ console.log(newAttire.next())
 console.log(newAttire.next()) 
 console.log(newAttire.next()) 
 
-/*function* roomItems() {
+function* roomItems() {
     let x = 0;
     yield 'Table';
     yield 'Bed';
@@ -1157,7 +1157,6 @@ let newRoomItem = roomItems();
 console.log((newRoomItem.next()).value)
 console.log(newRoomItem.next())
 console.log(newRoomItem.next())
-console.log(newRoomItem.next())*/
 
 //using a generator with loop
 
@@ -1343,3 +1342,33 @@ let mySet = [1, 3, 2, 4, 6, 3, 5, 5, 7, 9]
 
 let newSet = new Set(mySet);
 console.log(newSet)
+
+function seamfixMgt(values) {
+    let index = 0;
+    return {
+        next: function () {
+            if(index<values.length){
+                return {
+                    value: values[index++],
+                    done: false
+                }
+            }
+            else {
+                return {
+                    done: true
+                }
+            }
+            }
+        }
+}
+
+let staffInSeamfix = ['Chibuzor Ownurah', 'Chimezie Emewulu', 'Frank Atube', 'Diyan Oluwasegun', 'Lilian Wilnifred', 'Oluwatobi Alande'];
+let mgtStaff = seamfixMgt(staffInSeamfix);
+
+console.log((mgtStaff.next()).value)
+console.log((mgtStaff.next()).value)
+console.log((mgtStaff.next()).value)
+console.log((mgtStaff.next()).value)
+console.log((mgtStaff.next()).value)
+console.log((mgtStaff.next()).value)
+console.log(mgtStaff.next())
