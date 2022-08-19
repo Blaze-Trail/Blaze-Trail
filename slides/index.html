@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slide</title>
+</head>
+<body>
+   <div class="my-homepage">
+        <div class="slider">
+            <div class="slide">
+                <!-- radio button start -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- radio button end -->
+                <!-- start of pictures  -->
+                <div class="slides first">
+                    <img src="img/img-1.jpeg" alt="">
+                </div>
+                <div class="slides">
+                    <img src="img/img-2.jpeg" alt="">
+                </div>
+                <div class="slides">
+                    <img src="img/img-3.jpeg" alt="">
+                </div>
+                <div class="slides">
+                    <img src="img/img-4.jpeg" alt="">
+                </div>
+                <!-- end of pictures  -->
+                <!-- start of auto-navigation  -->
+                <div class="auto-navigation">
+                    <div class="auto-nav1"></div>
+                    <div class="auto-nav2"></div>
+                    <div class="auto-nav3"></div>
+                    <div class="auto-nav4"></div>
+                </div>
+                <!-- end of auto-navigation  -->
+                <!-- start of manual-navigation  -->
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!-- end of manual-navigation  -->
+            </div>
+        </div>
+        <div class="login-credentials">
+            <div class="login">
+                <h2>Login</h2>
+                <p>Provide login details below</p>
+            </div>
+            <form id="form" action="/">
+                <div class="form-validation">
+                    <label for="username" class="username">Username</label>
+                    <input id="username" name="username" type="text">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-validation">
+                    <label for="password" class="password">Password</label>
+                    <input id="password" name="password" type="text">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-validation">
+                    <button class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+   </div> 
+   <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.container {
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F27121, #8A2387, #E94057);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8A2387, #F27121, #E94057); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    /* text-align: center; */
+    color: white;
+
+}
+
+
+.header {
+    text-align: center;
+
+}
+
+.header {
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    font-family: 'Edu QLD Beginner';
+}
+
+.header, form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.todo-heading {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: .7rem;
+    margin: 20px auto;
+}
+
+.todo-input, .todo-button {
+    background: white;
+    padding: .5rem;
+    font-size: 1.5rem;
+    border: none;
+}
+
+/* .todo-button {
+    cursor: pointer;
+} */
+
+form button {
+    color: #d88771;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    color: white; 
+    background: #d88771;
+   
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-container{
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F27121, #8A2387, #E94057);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8A2387, #F27121, #E94057); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.todo-list {
+    list-style: none;
+    min-width: 30%;
+    
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    transition: all 1s ease;
+    /* border-top: 1px solid gray; */
+}
+
+.todo li {
+    flex: 1;
+    margin: 0 5px;
+}
+.trash-btn, .complete-btn {
+    background-color: #ff6f47;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    padding: 0.8rem;
+}
+
+.complete-btn {
+    background-color: rgb(73, 204, 73);
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration:line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotate(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #ff6f47;
+    width: 8rem;
+    cursor: pointer;
+    padding: .8rem;
+}
+
+.select::after{
+    content: '\25BC';
+    position: absolute;
+    background-color: #ff6f74;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    padding: .8rem;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background-color: white;
+    color: #ff6f74;;
+}
+
+/* media queries */
+
+@media only screen and (max-width:540px) {
+    .header h1 {
+        font-size: 2.5rem;
+    
+    }
+
+    .header, form {
+        min-height: 10vh;
+    }
+    
+}
+
+@media only screen and (max-width: 450px) {
+    .header h1 {
+        font-size: 1.5rem !important;
+        margin-top: 10px !important;
+            
+    }
+
+     .header, form {
+        min-height: 10vh;
+        margin-left: 10px;
+    }
+
+    .todo-input, .todo-button {
+        padding: .3rem;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .header h1 {
+        font-size: 1.5rem !important;
+        margin-top: 10px !important;
+            
+    }
+
+    .header, form {
+        min-height: 10vh;
+        margin-left: 10px;
+    }
+
+    .todo-input, .todo-button {
+        padding: .3rem;
+        font-size: 1rem;
+    }
+
+    select {
+        padding: .3rem;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .todo-heading {
+        margin: 20px 20px;
+    }
+    
+}
+
+@media only screen and (min-width: 280px) and (max-width: 376px){
+    .header h1 {
+        font-size: 1px;
+        margin-top: 10px;
+            
+    }
+
+    .header, form {
+        min-height: 10vh;
+        margin-left: 10px;
+    }
+
+    .todo-input, .todo-button {
+        padding: .3rem;
+        font-size: .8rem;
+    }
+    select {
+        padding: .3rem;
+        font-size: .8rem;
+    }
+    .select::after{
+        padding: .3rem;
+      
+    }
+}
+/* 
+@media only screen and (max-width: 400px) {
+    .header h1 {
+        font-size: 1px;
+        margin-top: 10px;
+            
+    }
+
+    .header, form {
+        min-height: 10vh;
+        margin-left: 10px;
+    }
+
+    .todo-input, .todo-button {
+        padding: .3rem;
+        font-size: .8rem;
+    }
+    select {
+        padding: .3rem;
+        font-size: .8rem;
+    }
+    .select::after{
+        padding: .3rem;
+      
+    }
+} */
+
+@media only screen and (max-width: 280px){
+    h1 {
+        align-items: center;
+    
+    }
+    .todo-heading {
+        align-items: center;
+       
+        display: flex;
+        font-size: 1.1rem;
+        letter-spacing: .7rem;
+        margin: 20px 10px;
+    }
+}

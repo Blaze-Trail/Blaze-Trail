@@ -1,0 +1,15 @@
+.nav-item a {
+    font-size: 1.3rem !important;
+    padding-right: 1rem !important;
+    font-weight: bold;
+}
+
+.navbar-brand {
+font-size: 2rem !important;
+background: #e96443;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #904e95, #e96443);
+background: linear-gradient(to right, #904e95, #e96443);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}

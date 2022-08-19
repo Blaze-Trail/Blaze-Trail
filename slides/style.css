@@ -1,0 +1,145 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+/* background-color: rgb(220, 228, 228); */
+/* grid-template-columns: 100px 200px 300px; 1fr 2fr 3fr 
+column-gap: 10px;
+row-gap: 10px; 
+gap: 10px
+grid-auto-rows: 30px;
+
+align-self: center; this aligns the container to a particular position
+*/
+}
+
+
+.my-homepage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider {
+    width: 800px;
+    height: 100vh;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.slide {
+    width: 500%;
+    height: 100vh;
+    display: flex;
+}
+
+.slider input {
+    display: none;
+}
+
+.slides {
+    width: 20%;
+    transition: 2s;
+}
+
+.slides img {
+    width: 700px;
+    height: 100vh;
+}
+
+/* .manual-navigation {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 660px;
+    width: 800px;
+}
+
+.manual-btn {
+    border: 3px solid white;
+    transition: 2s;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 40px;
+    cursor: pointer;    
+} */
+
+.manual-navigation {
+    position: absolute;
+    margin-top: 650px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn {
+    border: 3px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    /* margin-right: 40px; */
+    cursor: pointer;
+}
+
+.manual-btn:hover {
+    background-color: green;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+ .auto-navigation {
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    margin-top: 650px;
+}
+
+.auto-navigation div {
+    border: 3px solid blue;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 2s;
+}
+
+.auto-navigation div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .auto-navigation .auto-nav1 {
+    background-color: #40D3DC;
+}
+
+#radio2:checked ~ .auto-navigation .auto-nav2 {
+    background-color: #40D3DC;
+}
+
+#radio3:checked ~ .auto-navigation .auto-nav3 {
+    background-color: #40D3DC;
+}
+
+#radio4:checked ~ .auto-navigation .auto-nav14 {
+    background-color: #40D3DC;
+}
+
+.error-message {
+    color: red;
+}

@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: steelblue;
+}
+
+/* body {
+    background-color: skyblue;
+} */
+
+/* .main {
+    max-width: 1600px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 4fr ;
+    grid-template-rows: 1fr 7fr;
+    gap: 4px;
+    align-items: start; */
+
+    
+   
+/* display: grid; */
+/* height: 100vh;
+grid-template-areas:
+'header header header'
+'content content content'
+'aside aside aside'
+'footer footer footer';
+grid-template-columns: 1fr 2fr;
+grid-template-rows: 80px 1fr 70px;
+gap: 2px; 
+
+}*/
+
+/* .items {
+   
+    border: 1px solid skyblue;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);;
+
+}
+
+.items:nth-last-child(2) {
+grid-column-start: 1;
+grid-column-end: 3;
+background-color: black;
+}
+
+.items:nth-last-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: black;
+}
+
+.items:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: black;
+    grid-column: 1 / span 2;
+    }
+
+/*
+header {
+    grid-area: header;
+}
+
+content {
+    grid-area: content;
+    background-color: rgb(164, 151, 151);
+}
+
+nav {
+    grid-area: nav;
+    background-color: gray;
+}
+
+aside {
+    background-color: gray;
+}
+
+footer {
+    color: white;
+    grid-area: footer;
+    background-color: black;
+} */
+
+.main {
+    max-width: 1600px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'nav content sidebar'
+    'nav footer footer';
+    gap: 10px;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 80px 1fr 70px;
+}
+
+.items {
+    background: var(--primary-color);
+    border: 1px solid green;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: content;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.main .item2 {
+    background: var(--primary-color);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

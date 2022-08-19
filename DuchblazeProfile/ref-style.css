@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&family=Finlandica:ital,wght@1,500&family=Inconsolata:wght@300;500&family=Josefin+Sans:wght@500&family=Mingzat&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&family=Finlandica:ital,wght@1,500&family=Inconsolata:wght@300;500&family=Josefin+Sans:wght@500&family=Mingzat&family=Shadows+Into+Light&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&family=Edu+QLD+Beginner:wght@500&family=Finlandica:ital,wght@1,500&family=Inconsolata:wght@300;500&family=Josefin+Sans:wght@500&family=Mingzat&family=Shadows+Into+Light&family=Space+Mono&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:  aliceblue !important;
+}
+
+:root {
+    --primary-color: red;
+}
+
+/* main section end */
+.navbar {
+    background-color: rgb(28, 27, 27);
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.logo a, img {
+    height: 40px;
+    width: 45px;
+    padding: 5px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.nav-items ul li{
+    padding: 15px;
+    margin-left: 40px;
+    list-style: none;
+}
+
+
+.nav-items li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'josefin sans';
+}
+
+.nav-items li a:hover{
+    text-decoration: underline;
+    color: blue;
+    transition: all 0.3s ease-in;
+}
+.smaller-section h2{
+    color:brown;
+    align-items: center;
+    margin-top: 20px;
+    text-transform:initial;
+    font-family: 'edu qld beginner';
+    text-align: center;
+    letter-spacing: .3rem;
+}
+
+.smaller-section{
+   margin-right: 120px;
+   padding-bottom: 10px;
+}
+.-wrapper-width-img {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ref-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60px;
+    align-items: center;
+}
+.first-ref {
+    margin-right: 300px;
+    line-height: 1.5rem;
+}
+.second-ref {
+   line-height: 1.5rem;
+}
+/* main section end */
+
+
+
+/* Media queries */
+@media only screen and (max-width: 1450px) {
+    .nav-items li a {
+        font-size: 1.3rem;
+    
+    }
+    .nav-items ul li{
+        margin-left: 2px;
+    }
+    .container .logo img {
+        margin-left: -15px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 1120px) {
+    .-wrapper-class{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+     .first-ref {
+            margin-right: 150px;
+            
+    }
+     
+}
+
+
+@media only screen and (max-width: 920px) {
+    .smaller-section{
+           margin-right: 20px;
+          
+    }
+  
+    .first-ref {
+        margin-right: 150px;
+        
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .smaller-section{
+        margin-right: 10px;
+       
+ }
+
+ .first-ref {
+     margin-right: 50px;
+     
+ }
+
+  /* start of contact */
+  .my-address h3 {
+    letter-spacing: normal;
+    }
+
+    .my-address p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    line-height: normal;
+    font-size: 1rem;
+    }
+
+    .via-social h3 {
+        margin-left: 35px;
+    }
+    .via-social {
+        margin-left: -30px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .via-social h3 {
+        font-size: 14px;
+        letter-spacing: .7px !important;
+    }
+    .my-address h3{
+        font-size: 14px;
+    }
+
+    .my-address p {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    .socials .facebook a img {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    .socials .insta img {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    .socials .linked-in img {
+        width: 35px !important;
+        height: 35px !important;
+        /* margin-left: -5px !important; */
+    }
+    .socials .twitter img {
+        width: 35px !important;
+        height: 35px !important;
+       
+    }
+
+    .email img {
+        margin-top: 2px;
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .phone-no img {
+        margin-top: 2px;
+        width: 25px !important;
+        height: 25px !important;
+    }
+}
+/* contact end */
+
+@media only screen and (max-width: 670px) {
+    .smaller-section{
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+ .first-ref {
+     margin-right: 30px;
+     
+ }
+ .mobile-class {
+    flex-direction: column;
+ }
+ /* contact start */
+    .contact {
+    padding-left: -10px !important;
+ }
+    .phone-no img{
+    padding-left: -10px !important;
+    }
+    .email img{
+        padding-left: -10px !important;
+    }
+    .contact .phone-no img {
+        margin-left: 5px;
+    }
+    .contact .email img {
+       margin-left: 5px !important;
+    }
+    .contact .heading h3 {
+        margin-left: -50px !important;
+     }
+ /* contact end */
+}
+
+@media only screen and (max-width: 652px) {
+    .mobile-view {
+        display: flex;
+    }
+
+}
+/* experience scale picture resize start */
+
+/* contact me start */
+@media only screen and (max-width: 625px){
+    .contact-me-content {
+        flex-direction: column;
+    }
+    .contact-me-content .my-address h3 {
+        margin-right: 0;
+        margin-top: 15px;
+    }
+    .contact-me-content .my-address p {
+        text-align: center !important;
+    }
+    .socials {
+        justify-content: center;
+    }
+   
+    .contact .phone-no {
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-me-content .contact .email {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .contact .heading h3 {
+        margin-left: 0 !important;
+     }
+}
+/* contact me end */
+
+@media only screen and (max-width: 568px) {
+    .-wrapper-width-img {
+    flex-direction: column;
+    }
+
+ .first-ref {
+     margin-right: 25px;
+     line-height: normal;
+    }
+ .second-ref {
+    margin-right: 2px;
+    line-height: normal;
+    }
+ .mobile-class {
+    flex-direction: column;
+    }
+ .smaller-section h2{
+    margin-top: 5px;
+    text-transform:initial;
+    font-family: 'edu qld beginner';
+    letter-spacing: .1rem;
+    }
+
+}
+
+@media only screen and (max-width: 564px) {
+    .-wrapper-width-img .ref-wrapper {
+        flex-direction: column;
+    }
+
+    .first-ref {
+        margin-bottom: 25px;
+        margin-right: 0;
+        line-height: 1.3rem;
+       }
+    .second-ref {
+        line-height: 1.3rem;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 558px) {
+    .second-ref {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .navbar {
+        background-color: rgb(28, 27, 27);
+        display: flex;
+        justify-content: space-between;
+        height: 400px;
+       
+    }
+    .second-ref {
+        margin-bottom: 20px;
+    } 
+}
+
+
+@media only screen and (max-width: 540px) {
+    .smaller-section {
+        margin-top: -15px;
+    } 
+}
+
+@media only screen and (max-width: 415px) {
+     .mobile-view {
+        flex-direction: column;
+        height: 100%;
+    }
+    .larger-section h1, h2 {
+        color:rgb(64, 43, 226);
+    }
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 376px) {
+    .mobile-view {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 355px;
+    }
+  
+    .mobile-class {
+        margin-bottom: 0;
+    }
+
+    .work-content .fashion-home-page img{
+        justify-content: center;
+        width: 250px;
+        height: 200px;
+        margin-left: 5px;
+        
+    }
+
+    /* contact me end */
+}
+
+
+
+/* contact me start */
+.margin-top-wrapper{
+    margin: 0;
+    width: 100%;
+}
+.border-before-contact{
+    margin-top: 5px;
+}
+.contact-me-border {
+    border-bottom: 2px solid rgb(97, 164, 224);
+    width: 100%;
+}
+
+.contact-border {
+    border-bottom: 2px solid rgb(97, 164, 224);
+    width: 100%;
+}
+
+.heading h3{
+    text-align: center;
+    letter-spacing: .2rem;
+}
+.phone-no {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.email {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.phone-no img {
+    margin-top: 2px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.email img {
+    margin-top: 2px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+.socials {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+.socials .facebook a img {
+    margin-right: 0;
+    width: 41px;
+    margin-top: 15px;
+}
+.socials .insta img {
+    margin-left: 2px;
+}
+.socials .insta img {
+    margin-right: 3px;
+    width: 40px;
+    margin-top: 15px;
+}
+
+.socials .linked-in img {
+    margin-left: 2px;
+}
+.socials .linked-in img {
+    margin-right: 3px;
+    width: 39px;
+    margin-top: 15px;
+}
+.socials .twitter img {
+    margin-left: 2px;
+    width: 39px;
+}
+.socials .twitter img {
+    margin-right: 3px;
+    margin-top: 15px;
+}
+.via-social h3 {
+    margin-left: 35px;
+    letter-spacing: .1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.my-address h3 {
+    margin-right: 20px;
+}
+
+.my-address h3 {
+    letter-spacing: .1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.my-address p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+ .contact-me-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 140px;
+    margin-right: 140px; */
+}
+
+/* contact me end */
+
+/* footer start */
+.copyright-border {
+   
+    border-bottom: 2px solid rgb(97, 164, 224);
+    width: 90%;
+}
+.copy-right-border {
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+ 
+.copy p {
+    margin-top: 10px;
+    text-align: center;
+    }
+/* footer end */
+
+.back-wrapper-image {
+    margin-top: 150px;
+}

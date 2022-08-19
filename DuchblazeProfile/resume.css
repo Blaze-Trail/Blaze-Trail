@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,500&family=Mingzat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,500&family=Josefin+Sans:wght@500&family=Mingzat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,500&family=Inconsolata:wght@300;500&family=Josefin+Sans:wght@500&family=Mingzat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,500&family=Inconsolata:wght@300;500&family=Josefin+Sans:wght@500&family=Mingzat&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&family=Finlandica:ital,wght@1,500&family=Inconsolata:wght@300;500&family=Josefin+Sans:wght@500&family=Mingzat&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&family=Finlandica:ital,wght@1,500&family=Inconsolata:wght@300;500&family=Josefin+Sans:wght@500&family=Mingzat&family=Shadows+Into+Light&family=Space+Mono&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color:  aliceblue;
+}
+
+.navbar .container .logo img {
+    width: 35px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+/* .navbar {
+    background-color: aqua;
+    padding-bottom: 10px;
+    color: white;
+    position: fixed;
+    top: -50%;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+} */
+
+.navbar {
+    background-color: #333;
+    position: fixed;
+    top: -70px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+  }
+ 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.nav-items ul {
+    display: flex;
+    margin-right: 30px;
+}
+
+.nav-items li {
+    list-style: none;
+    padding: 15px;
+    font-size: 1.5rem;
+    
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    /* padding: 0.5rem; */
+    display: block;
+}
+
+.nav-items  a:hover {
+    background-color: black;
+    border-radius: 3px;
+    color: rgb(216, 3, 95);
+    transition: all 0.9s ease;
+    /* border-bottom: 1px solid green; */
+}
+/* <!-- first column start --> */
+.main-header {
+    text-align: center;
+    margin-top: 80px;
+}
+.header h1 {
+    font-family: mingzat;
+    letter-spacing: .5rem;
+    font-size: 2rem;
+}
+.header p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-style: italic;
+}
+
+.header span {
+    font-weight: bold;
+    font-family: 'josefin sans';
+}
+/* <!-- first column end --> */
+
+/* career objective start */
+.my-career-obj {
+    text-align: center;
+    margin: 20px 15px;
+    font-size: 1.5rem;
+    font-family: inconsolata;
+}
+.my-career-obj span {
+    font-weight: bold;
+}
+
+/* career objective end */
+/* personal data start */
+.persona {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: inconsolata;
+    margin-right: 20px;
+    text-align: justify;
+}
+.p-details h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+.p-details span {
+    font-weight: bold;
+    
+}
+.p-details p {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+/* personal data end */
+/* edu qualification start */
+.qual-details {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: inconsolata;
+    margin-right: 20px;
+    text-align: justify;
+}
+.qual-details h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+.my-qaulify span {
+    font-weight: bold;
+    
+}
+.my-qaulify p {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+/* edu qualification end */
+
+/* work exp start */
+.experience {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: inconsolata;
+    margin-right: 20px;
+    text-align: justify;
+}
+.experience h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+.my-exp span {
+    font-weight: bold;
+    
+}
+.my-exp p {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+/* work exp end */
+
+/* my skills start */
+.my-skill {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: inconsolata;
+    margin-right: 20px;
+    text-align: justify;
+}
+.my-skill h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+.my-skill ul li {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+/* my skills end */
+
+/* my interest start */
+.my-interest {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: inconsolata;
+}
+.my-interest h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+.my-interest p {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+/* my interest end */
+
+/* footer start */
+
+.copy-wrapper {
+    color: black;
+    font-weight: bold;
+}
+.copyright-border {
+   
+    border-bottom: 2px solid rgb(97, 164, 224);
+    width: 90%;
+}
+.copy-right-border {
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    
+}
+ 
+.copy-wrapper p {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 0;
+    font-style: italic;
+    font-family: mingzat;
+    background-color: rgb(229, 238, 247);
+}
+/* footer end */
+
+.margin-right-wrapper {
+    align-items: center;
+   
+}
+
+/* mobile menu start */
+.mobile-menu {
+    position: absolute;
+    width: 30px;
+    height: 21px;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0.4rem;
+    right: 1rem;
+    display: none;
+    transform: translate(5%, 20%);
+    cursor: pointer;
+}
+.bar {
+    height: 3px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: white;
+    
+}
+/* mobile menu end */
+/* media query start*/
+@media only screen and (max-width: 855px) {
+    .nav-items li {
+        font-size: 1.1rem;
+        
+    }
+}
+@media only screen and (max-width: 670px) {
+    .mobile-menu {
+        display: flex;
+    }
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .nav-items {
+        width: 100%;
+        display: none;
+    }
+    .nav-items ul {
+        flex-direction: column;
+    }
+    .nav-items li a {
+        align-items: left;
+    }
+
+    .nav-items ul {
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        /* border-radius: 10px; */
+        margin-right: 0;
+      }
+      .nav-items li {
+        text-align: left;
+        font-size: 1.3rem;
+        border-bottom: 1px solid gray;
+      }
+      .nav-items.active {
+        display: flex;
+      }   
+      
+}
+
+@media only screen and (max-width: 375px) {
+    .header h1 {
+        font-family: mingzat;
+        letter-spacing: normal;
+        font-size: .8rem;
+        line-height: normal;
+    }
+
+    .header p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+@media only screen and (max-width: 280px) {
+    .main-header {
+        margin-top: 50px;
+    }
+    .header h1 {
+        font-family: mingzat;
+        letter-spacing: normal;
+        font-size: 1.5rem;
+    }
+    .header p {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    /* interest start */
+    .my-interest {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: justify;
+    }
+       /* interest end */
+    /* footer start */
+    .copy-wrapper p {
+       line-height: 1.2rem;
+    }
+    /* footer end */
+
+}
+/* media query end
